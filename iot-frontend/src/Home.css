@@ -1,0 +1,30 @@
+.home{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.sensordata{
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    height: 14%;
+    display: flex;
+    background-color: #ffffff;
+}
+
+.chart-and-controls{
+    display: flex;
+    flex:1;
+    flex-direction: row;
+}
+.chart{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    padding-right: 10px;
+    padding-bottom: 12px;
+}
+.controls{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    flex:1;
+}

@@ -1,0 +1,121 @@
+.SearchAndStatistics {
+    display: flex;
+    padding: 0px;
+    max-width: 1300px;
+    margin: 0px auto;
+    width: 100%; 
+    box-sizing: border-box;
+    flex:1;
+    overflow: hidden;  /* To ensure it doesn't overflow its container */
+}
+
+.filters {
+    width: 240px;
+    padding: 10px;
+    background-color: #c5c5c5;  /* Color for the filter block */
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+    border: none;  /* Removing rounded corners */
+}
+
+.filterOptions {
+    display: flex;
+    flex-direction: column;
+}
+.filterOptions label {
+    margin-bottom: 10px;
+}
+.filterOptions select, .filterOptions input {
+    margin-bottom: 15px;
+}
+.results {
+    flex: 1;
+    padding: 10px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    overflow-y: auto;  /* Allowing vertical scrolling if content overflows */
+}
+
+.SearchAndStatistics table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.SearchAndStatistics table, .SearchAndStatistics th, .SearchAndStatistics td {
+    border: 1px solid #a7bc33;
+}
+
+.SearchAndStatistics th, .SearchAndStatistics td {
+    padding: 8px 12px;
+    text-align: left;
+}
+.SearchAndStatistics th {
+    position: relative;
+}
+.fas.fa-arrow-up, .fas.fa-arrow-down {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-right: 6px;
+    border: 1px solid #000000;
+    border-radius: 4px; 
+    padding: 2px;
+}
+.SearchAndStatistics .loading {
+    color: #000;
+}
+
+.SearchAndStatistics th {
+    background-color: #c9e2ad;
+}
+.SearchAndStatistics tr {
+    background-color: #bfdab9;
+}
+.SearchAndStatistics tr:nth-child(even) {
+    background-color: #a1d289;
+}
+
+.SearchAndStatistics tr:hover {
+    background-color: #1e890e;
+}
+
+.SearchAndStatistics .error, .SearchAndStatistics .loading {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    color: red;
+}
+
+.SearchAndStatistics .loading {
+    color: #000;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #dad8d8;
+    transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+    background-color: #8f8f8f;
+}
+
+.pagination button.active {
+    background-color: #333;
+    color: #fff;
+}

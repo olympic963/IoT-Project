@@ -1,0 +1,17 @@
+  .Delete option {
+    padding: 10px;
+    cursor: pointer;
+  }
+  .deleteBlock {
+    border-radius: 8px; 
+    font-size: 18px; 
+    padding: 10px; 
+    margin: 10px 0; 
+    cursor: pointer; 
+    border: 2px solid #452727; 
+  }
+  
+  .deleteBlock:hover {
+    background-color: #f0f0f0; 
+  }
+  
